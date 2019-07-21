@@ -66,7 +66,7 @@
                     
                     $.ajax({
                         method: 'GET',
-                        url: API_URL , 
+                        url: API_URL + inputVal.val(), 
                         headers:{
                             'x-api-key' : API_KEY
                         }
@@ -87,10 +87,10 @@
                         This is what the API call should look like
                         */
 
-                        
+                        /*
                             $.ajax({
                                     // Multi li
-                            })
+                            }) /*
                             .then(function(parameter){
                                /* Check here if there is a returned data (the data returned is an array so, you can just use the length to check)
 
@@ -101,7 +101,7 @@
                                     Display cat.gif */
 
                                     
-                                
+                                .then(function(parameter){
                                 if(parameter.length == 1){
                                     resultContainer.append(`<h3>Search results for "${inputVal.val()}"</h3>`);
                                     searchGif.attr("src" , null);
