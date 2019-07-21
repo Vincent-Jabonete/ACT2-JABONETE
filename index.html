@@ -122,6 +122,8 @@
                                 }
                                 else{
                                     $('#res').remove();
+                                    
+                                    $( "h3" ).remove('h3');
                                     resultContainer.append(`<h3>No search results for "${inputVal.val()}"</h3>`);
                                     searchGif.attr("src" , gifNoResultLocation);
                                 }
