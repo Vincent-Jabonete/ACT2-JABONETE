@@ -86,8 +86,10 @@
                     3.) Make an API call
                         This is what the API call should look like
                         */
-                            $.ajax({
 
+                        
+                            $.ajax({
+                                    // Multi li
                             })
                             .then(function(parameter){
                                /* Check here if there is a returned data (the data returned is an array so, you can just use the length to check)
@@ -132,6 +134,7 @@
                                 /*Handle some default behaviours here after the search like the ff:
                                 * reset the value of the form to blank
                                 * other things that you want to add */
+                                inputVal.val('');
                             })
                 
                
